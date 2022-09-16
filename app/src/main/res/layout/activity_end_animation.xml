@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+
+    tools:context=".End_Animation">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:lottie_fileName="delivery2.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please wait a few minutes\n your order is being prepared now\n it will deliver to your location\n as soon as possible"
+        android:textColor="#A668676A"
+        android:fontFamily="@font/arapey"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</LinearLayout>

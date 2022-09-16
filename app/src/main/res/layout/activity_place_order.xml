@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:gravity="center"
+    tools:context=".PlaceOrder">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/order"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Total amount to be paid "
+        android:textColor="@color/endcolor"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Paid_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/ed_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_edittxt"
+        android:drawableLeft="@drawable/home_address_24px"
+        android:hint=" Full Address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_edittxt"
+        android:drawableLeft="@drawable/phone_24px"
+        android:hint=" Phone Number"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_removeAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="serif"
+        android:text="Remove All"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_placeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="serif"
+        android:text="Place Order"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

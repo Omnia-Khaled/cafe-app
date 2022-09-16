@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkipMainActivity7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bac12">
+
+        <TextView
+            android:id="@+id/cafe"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Cafe Time"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/layout_back"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:clickable="false"
+                    android:fontFamily="serif"
+                    android:text="Hot Coffee"
+                    android:textColor="#83000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_cold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:clickable="false"
+                    android:fontFamily="serif"
+                    android:text="Cold Coffee"
+                    android:textColor="#83000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:fontFamily="serif"
+                    android:text="Others"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/cenapon" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="Cenapon"
+                                android:textColor="#020202"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="Copycat"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="serif"
+                                android:text="LE 15.000"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_add_cennapon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:clickable="true"
+                                    android:drawableLeft="@drawable/add_new_24px"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/tv_count_cenapon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#000000"
+                                    android:gravity="center" />
+                                <TextView
+                                    android:id="@+id/tv_minus_cenapon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/reduce_24px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_sum_cenapon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/dounutschocolate" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:fontFamily="serif"
+                                android:text="Dounut"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="Chocolate"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="serif"
+                                android:text="LE 10.000"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_add_donchoco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/add_new_24px" />
+                                <TextView
+                                    android:id="@+id/tv_count_donchoco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#000000"
+                                    android:gravity="center" />
+                                <TextView
+                                    android:id="@+id/tv_minus_donchoco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/reduce_24px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_sum_donchoco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/wafflenutella" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:fontFamily="serif"
+                                android:text="Waffle"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="Nutella"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="serif"
+                                android:text="LE 35.000"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_add_waffle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/add_new_24px" />
+
+                                <TextView
+                                    android:id="@+id/tv_count_waffle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#000000"
+                                    android:gravity="center" />
+
+                                <TextView
+                                    android:id="@+id/tv_minus_waffle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/reduce_24px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_sum_waffle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/chocheesecake" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Cheesecake_txt_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="Cheesecake"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="Chocolate"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="serif"
+                                android:text="LE 20.000"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_add_cheesechoco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/add_new_24px" />
+
+                                <TextView
+                                    android:id="@+id/tv_count_cheesechoco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#000000"
+                                    android:gravity="center" />
+
+                                <TextView
+                                    android:id="@+id/tv_minus_cheesechoco"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/reduce_24px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_sum_cheesechoco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/whitefrosting" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:fontFamily="serif"
+                                android:text="Donut"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/DonutWhiteDesc_txt_view"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:fontFamily="serif"
+                                android:lines="1"
+                                android:text="White Frosting"
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="serif"
+                                android:text="LE 53.000"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_add_donwhite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/add_new_24px" />
+
+                                <TextView
+                                    android:id="@+id/tv_count_donwhite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#000000"
+                                    android:gravity="center" />
+
+                                <TextView
+                                    android:id="@+id/tv_minus_donwhite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:backgroundTint="#000000"
+                                    android:drawableLeft="@drawable/reduce_24px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_sum_donwhite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_clickHere"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_gradient"
+            android:fontFamily="serif"
+            android:text="finish, click here"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroungopacity">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

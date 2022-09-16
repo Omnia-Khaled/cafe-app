@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    tools:context=".Visa">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/visa_100px" />
+
+    <EditText
+        android:id="@+id/ed_CardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_edittxt"
+        android:drawableLeft="@drawable/visa_24px"
+        android:hint=" Credit Card Number\n xxxx- xxxx- xxxx- xxxx"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/ed_ExDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_edittxt"
+        android:hint=" Expiry Date "
+        android:drawableLeft="@drawable/timeline_week_24px"
+        android:inputType="date"
+        android:textSize="20sp"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/ed_CVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_edittxt"
+        android:hint=" CVV (last 3 digits of number\n on the back of your card) "
+        android:drawableLeft="@drawable/card_verification_value_24px"
+        android:inputType="numberPassword"
+        android:textSize="20sp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_sign_edittxt"
+        android:hint=" Card Holder "
+        android:drawableLeft="@drawable/name_24px"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_PayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="serif"
+        android:text="Pay Now"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

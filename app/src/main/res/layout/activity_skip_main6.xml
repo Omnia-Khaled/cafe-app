@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_clickHere"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac12"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/cafe"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Cafe Time"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/layout_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:clickable="false"
+                android:fontFamily="serif"
+                android:text="Hot Coffee"
+                android:textColor="#83000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:clickable="false"
+                android:fontFamily="serif"
+                android:text="Cold Coffee"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="serif"
+                android:text="Others"
+                android:textColor="#83000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/affogato" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cafeAffogato_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Café Affogato"
+                            android:textColor="#020202"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cafeAffogatoDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Italian coffee"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 20.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/tv_add_cafeaffog"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_cafeaffog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_cafeaffog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_cafeaffog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/coldbrew" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ColdBrew_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Cold Brew"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ColdBrewDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="higher coffee to water ratio than regular drip coffee"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 25.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_coldBrew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_coldBrew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_coldBrew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_coldBrew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/milkshake" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Milkshake_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Milkshake"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/MilkshakeDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Thick and creamy with a rich coffee and chocolate flavor"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 35.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_milkshake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_milkshake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_milkshake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_milkshake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ice_vanlatte" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/IceVan_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Ice Vanilla Latte"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/IceVanDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Cold coffee drink made with espresso, ice, milk, and vanilla syrup"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 20.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_icevan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_icevan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_icevan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_icevan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/horchatalatte" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Horchate_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Horchata Latte"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/HorchateDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Mixing homemade cinnamon rice milk with a shot of espresso"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 53.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_horch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_horch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_horch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_horch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_clickHere2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="finished, click here"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroungopacity">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+
+</RelativeLayout>

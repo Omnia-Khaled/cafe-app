@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac12"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/tv_clickHere1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/btn_gradient"
+        android:clickable="true"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="finished, click here"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cafe"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Cafe Time"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/layout_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="serif"
+                android:text="Hot Coffee"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="serif"
+                android:text="Cold Coffee"
+                android:textColor="#83000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Others"
+                android:textColor="#83000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/americano" />
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Amerc_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Americano"
+                            android:textColor="#020202"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/AmercDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Espresso drink made with hot water and espresso"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 15.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_amer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_amer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_amer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_amer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="false"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cappuccino" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Cap_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Cappuccino"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/CapDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="A shot of espresso with steamed milk and milk foam"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 25.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_cap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_cap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_cap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_cap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/macchiato" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Mac_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Macchiato"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/MacDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="2 shots of espresso and a small amount of milk"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 35.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_mac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_mac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_mac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_mac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/latte" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="serif"
+                            android:text="Latte"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/LatteDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Coffee drink with espresso, steamed milk and a layer of foam on top"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 20.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_latte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_latte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_latte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_latte"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/mocha" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="serif"
+                            android:text="Mocha"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/MochaDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="One or more shots of espresso,Cocoa powder/ sugar,Steamed milk,Steamed milk froth and Shaved chocolate or chocolate syrup on top"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 53.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_mocha"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_mocha"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_mocha"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_mocha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/blackcoffe" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="serif"
+                            android:text="Black"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 10.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_balck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/redeye" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="serif"
+                            android:text="Red Eye"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/RedEyeDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Espresso + Brewed Coffee"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 40.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_redeye"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_redeye"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_redeye"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_redeye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/vanillalatte" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/VanLatte_txt_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Vanilla Latte"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/VanLatteDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Hot espresso with vanilla syrup and hot milk"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 50.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_hotvanlatte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_hotvanlatte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_hotvanlatte"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_hotvanlatte"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/doppio" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="serif"
+                            android:text="Doppio"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/DoppioDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="A double shot of espresso, the doppio is perfect for putting extra pep in your step."
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 65.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_add_dop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:backgroundTint="#000000"
+                            android:drawableLeft="@drawable/add_new_24px" />
+
+                        <TextView
+                            android:id="@+id/tv_count_dop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_minus_dop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#000000"
+                            android:drawableLeft="@drawable/reduce_24px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_sum_dop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:gravity="center" />
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/cortado" />
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="serif"
+                            android:text="Cortado"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/CortadoDesc_txt_view"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:fontFamily="serif"
+                            android:lines="1"
+                            android:text="Perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity."
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="serif"
+                            android:text="LE 75.000"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_add_cortado"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/add_new_24px" />
+
+                            <TextView
+                                android:id="@+id/tv_count_cortado"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tv_minus_cortado"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="#000000"
+                                android:drawableLeft="@drawable/reduce_24px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sum_cortado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#000000"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
